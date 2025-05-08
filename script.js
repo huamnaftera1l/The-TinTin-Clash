@@ -177,8 +177,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         // AI行动判断 (如果玩家未造成胜负，或玩家行动是蓄力/防御)
         else if (aiAction === ACTION_BIUBIU) { // 此时玩家是丁丁, 防防, 大防
-            if (playerActionChoice === ACTION_DEFEND) { // 玩家防防
-                message += " AI的biubiu被你的防防挡住!";
+            if (playerActionChoice === ACTION_DEFEND && playerActionChoice === ACTION_STRONG_DEFEND) { // 玩家防防
+                message += " AI的biubiu被你的[${translateAction(aiAction)}]挡住!";
             } else if (playerActionChoice === ACTION_STRONG_ATTACK) {
                  // 此情况理论上已被上面玩家刷刷的逻辑覆盖并判定胜负
                  // 若到此，说明玩家的刷刷可能被抵消或防御（但本游戏抵消就结束了）
