@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>丁丁</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>丁丁 v0.5</h1>
+
+        <div class="ai-area" id="ai-zone">
+            <h2>对手区🤖 </h2>
+            <p>对手丁丁: <span id="ai-dingding">0</span></p>
+        </div>
+
+        <div class="game-log">
+            <div class="game-log">
+                <h2>游戏信息</h2>
+                <p id="round-message">--- 点击开始 ---</p>
+                <p>操作倒计时: <span id="action-countdown" style="color: red; font-weight: bold;">0.0s</span></p> <p id="game-result">---</p>
+            </div>
+        </div>
+
+        <div class="player-area" id="player-zone">
+            <h2>玩家区🤓👆</h2>
+            <p>你的丁丁: <span id="player-dingding">0</span></p>
+            <div class="actions">
+                <button id="btn-charge">1. 丁丁👊 (蓄力)</button>
+                <button id="btn-biubiu">2. biubiu🔫 (攻击, 消耗1)</button>
+                <button id="btn-defend">3. 防防🛡️ (防御biubiu)</button>
+                <button id="btn-strong-attack">4. 刷刷🌪️ (强力攻击, 消耗3)</button>,
+                <button id="btn-strong-defend">5. 大防 (防御刷刷, 消耗1)</button>
+            </div>
+        </div>
+
+
+        <button id="btn-restart">重新开始</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
