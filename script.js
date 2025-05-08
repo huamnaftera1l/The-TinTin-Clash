@@ -211,12 +211,12 @@ document.addEventListener('DOMContentLoaded', () => {
         roundMessageDisplay.textContent = message;
 
         if (playerLoses) {
-            gameResultDisplay.textContent = "你输了! 😭";
+            gameResultDisplay.textContent = "你输了! ✋😭🤚";
             gameResultDisplay.style.color = "red";
             isGameOver = true;
             gameState = 'IDLE';
         } else if (aiLoses) {
-            gameResultDisplay.textContent = "你赢了! 🎉";
+            gameResultDisplay.textContent = "你赢了! 🎉🤓👆";
             gameResultDisplay.style.color = "green";
             isGameOver = true;
             gameState = 'IDLE';
